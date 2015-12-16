@@ -1,6 +1,6 @@
 # Prints the uptime.
 
 run_segment() {
-	uptime | ggrep -PZo "(?<=up )[^,]*"
+	uptime | grep -PZo "(?<=up )[^,]*"
 	return 0
 }
